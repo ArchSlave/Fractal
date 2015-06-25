@@ -1,0 +1,13 @@
+C:\Users\Thiago\Documents\UFSCar\LARQ\Fractal\Zooming\Zooming\bin\Release\Zooming.exe.config
+C:\Users\Thiago\Documents\UFSCar\LARQ\Fractal\Zooming\Zooming\bin\Release\Zooming.exe
+C:\Users\Thiago\Documents\UFSCar\LARQ\Fractal\Zooming\Zooming\bin\Release\Zooming.pdb
+C:\Users\Thiago\Documents\UFSCar\LARQ\Fractal\Zooming\Zooming\bin\Release\Trauer.dll
+C:\Users\Thiago\Documents\UFSCar\LARQ\Fractal\Zooming\Zooming\bin\Release\Trauer.Graphics.dll
+C:\Users\Thiago\Documents\UFSCar\LARQ\Fractal\Zooming\Zooming\bin\Release\Trauer.pdb
+C:\Users\Thiago\Documents\UFSCar\LARQ\Fractal\Zooming\Zooming\bin\Release\Trauer.Graphics.pdb
+C:\Users\Thiago\Documents\UFSCar\LARQ\Fractal\Zooming\Zooming\obj\Release\Zooming.csprojResolveAssemblyReference.cache
+C:\Users\Thiago\Documents\UFSCar\LARQ\Fractal\Zooming\Zooming\obj\Release\Zooming.MainForm.resources
+C:\Users\Thiago\Documents\UFSCar\LARQ\Fractal\Zooming\Zooming\obj\Release\Zooming.Properties.Resources.resources
+C:\Users\Thiago\Documents\UFSCar\LARQ\Fractal\Zooming\Zooming\obj\Release\Zooming.csproj.GenerateResource.Cache
+C:\Users\Thiago\Documents\UFSCar\LARQ\Fractal\Zooming\Zooming\obj\Release\Zooming.exe
+C:\Users\Thiago\Documents\UFSCar\LARQ\Fractal\Zooming\Zooming\obj\Release\Zooming.pdb

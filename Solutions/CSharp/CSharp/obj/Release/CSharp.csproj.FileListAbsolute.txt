@@ -1,0 +1,11 @@
+C:\Users\Thiago\Documents\UFSCar\LARQ\Fractal\CSharp\CSharp\CSharp\bin\Release\CSharp.exe.config
+C:\Users\Thiago\Documents\UFSCar\LARQ\Fractal\CSharp\CSharp\CSharp\bin\Release\CSharp.exe
+C:\Users\Thiago\Documents\UFSCar\LARQ\Fractal\CSharp\CSharp\CSharp\bin\Release\CSharp.pdb
+C:\Users\Thiago\Documents\UFSCar\LARQ\Fractal\CSharp\CSharp\CSharp\obj\Release\CSharp.exe
+C:\Users\Thiago\Documents\UFSCar\LARQ\Fractal\CSharp\CSharp\CSharp\obj\Release\CSharp.pdb
+C:\Users\Thiago\Documents\UFSCar\LARQ\Fractal\CSharp\CSharp\bin\Release\CSharp.exe.config
+C:\Users\Thiago\Documents\UFSCar\LARQ\Fractal\CSharp\CSharp\obj\Release\CSharp.exe
+C:\Users\Thiago\Documents\UFSCar\LARQ\Fractal\CSharp\CSharp\obj\Release\CSharp.pdb
+C:\Users\Thiago\Documents\UFSCar\LARQ\Fractal\CSharp\CSharp\bin\Release\CSharp.exe
+C:\Users\Thiago\Documents\UFSCar\LARQ\Fractal\CSharp\CSharp\bin\Release\CSharp.pdb
+C:\Users\Thiago\Documents\UFSCar\LARQ\Fractal\CSharp\CSharp\obj\Release\CSharp.csprojResolveAssemblyReference.cache

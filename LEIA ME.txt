@@ -1,0 +1,2 @@
+Devido aos infinitos erros, como o que pode ser visto na imagem "Erro.png" eu tive que enviar
+a solution de C++ compactada.

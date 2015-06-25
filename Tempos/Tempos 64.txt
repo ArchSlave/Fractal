@@ -1,0 +1,103 @@
+Vanilla [Disabled (/Od)]
+Days              : 0
+Hours             : 0
+Minutes           : 1
+Seconds           : 0
+Milliseconds      : 357
+Ticks             : 603578695
+TotalDays         : 0,000698586452546296
+TotalHours        : 0,0167660748611111
+TotalMinutes      : 1,00596449166667
+TotalSeconds      : 60,3578695
+TotalMilliseconds : 60357,8695
+
+Vanilla [Full Optimization (/Ox), Favor fast code (/Ot)]
+Days              : 0
+Hours             : 0
+Minutes           : 0
+Seconds           : 34
+Milliseconds      : 681
+Ticks             : 346819999
+TotalDays         : 0,00040141203587963
+TotalHours        : 0,00963388886111111
+TotalMinutes      : 0,578033331666667
+TotalSeconds      : 34,6819999
+TotalMilliseconds : 34681,9999
+
+Cpp Improved [Disabled (/Od), inline asm: Off]
+Days              : 0
+Hours             : 0
+Minutes           : 0
+Seconds           : 52
+Milliseconds      : 332
+Ticks             : 523322921
+TotalDays         : 0,000605697825231481
+TotalHours        : 0,0145367478055556
+TotalMinutes      : 0,872204868333333
+TotalSeconds      : 52,3322921
+TotalMilliseconds : 52332,2921
+
+Cpp Improved [Full Optimization (/Ox), Favor fast code (/Ot), inline asm: Off]
+Days              : 0
+Hours             : 0
+Minutes           : 0
+Seconds           : 26
+Milliseconds      : 573
+Ticks             : 265739013
+TotalDays         : 0,000307568302083333
+TotalHours        : 0,00738163925
+TotalMinutes      : 0,442898355
+TotalSeconds      : 26,5739013
+TotalMilliseconds : 26573,9013
+
+CSharp (Optimizations Disabled, TPL: Off)
+Days              : 0
+Hours             : 0
+Minutes           : 0
+Seconds           : 41
+Milliseconds      : 305
+Ticks             : 413050790
+TotalDays         : 0,000478068043981481
+TotalHours        : 0,0114736330555556
+TotalMinutes      : 0,688417983333333
+TotalSeconds      : 41,305079
+TotalMilliseconds : 41305,079
+
+CSharp (Optimizations Enabled, TPL: Off)
+Days              : 0
+Hours             : 0
+Minutes           : 0
+Seconds           : 30
+Milliseconds      : 783
+Ticks             : 307832865
+TotalDays         : 0,000356288038194444
+TotalHours        : 0,00855091291666667
+TotalMinutes      : 0,513054775
+TotalSeconds      : 30,7832865
+TotalMilliseconds : 30783,2865
+
+CSharp [Optimizations Disabled, TPL: On]
+Days              : 0
+Hours             : 0
+Minutes           : 0
+Seconds           : 7
+Milliseconds      : 942
+Ticks             : 79421365
+TotalDays         : 9,19228761574074E-05
+TotalHours        : 0,00220614902777778
+TotalMinutes      : 0,132368941666667
+TotalSeconds      : 7,9421365
+TotalMilliseconds : 7942,1365
+
+CSharp [Optimizations Enabled, TPL: On]
+Days              : 0
+Hours             : 0
+Minutes           : 0
+Seconds           : 6
+Milliseconds      : 573
+Ticks             : 65737787
+TotalDays         : 7,60854016203704E-05
+TotalHours        : 0,00182604963888889
+TotalMinutes      : 0,109562978333333
+TotalSeconds      : 6,5737787
+TotalMilliseconds : 6573,7787

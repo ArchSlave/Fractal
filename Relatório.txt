@@ -1,0 +1,51 @@
+Relatório do Trabalho Final - Lab de Arch 2 - 2015
+
+Thiago Miranda RA 379824
+
+Objetivos:
+
+Implementar o algoritmo fornecido em diferentes linguagens e tentar otimiza-lo.
+Comparar os tempos de execução nas diferenas implementações e a influencia das otimizações dos compiladores.
+
+Sobre a organização dos arquivos
+
+Criei três pastas. Vanilla, Cpp Improved e CSharp.
+Em cada uma tem uma solution do Visual Studio 2013, com o projeto, o source e o executavel de cada 'versão do algoritmo'.
+
+Sobre as diferentes implementações:
+
+- Vanilla é a implementação original. 
+
+Cpp Improved contém uma versão modificada do algoritmo original. Principais modificações:
+- O programa utiliza streams para fazer o IO
+- O programa aloca memória para a imagem, invés de acessar o disco para cada 'setColor'
+- Somente depois de ter feito todas modificações necessárias a imagem é escrita em disco.
+- Constantes e streams foram declaradas como globais.
+- A versão 'inline ON' teve o 'miolo' do loop substituido por código em assembly.
+
+CSharp é a implementação do algoritmo em C#. O código é otimizado duas vezes. Primeiro na tradução de C# para IL, e depois na tradução do IL pelo JIT Compiler.
+As principais modificações dessa versão foram:
+- A criação de classes para lidar com a imagem e o formato .pnm
+- Uso de estruturas que possibilitam (mas não garantem) a paralelização de granularidade-grossa trechos do código
+
+CSharpBmp é a implementação do algoritmo em C#, mas usando o formato Bitmap 32bpp invés de PNM.
+A ideia era que sendo 32 bits por pixel, eu poderia 'ler um inteiro' e 'guardar um inteiro', ao invés de 4 bytes.
+É interesante notar que essa estratégia (de ler/escrever um inteiro invés de 4 bytes, para imagens  32bpp) funcionou bem em outros projetos, onde o 'bottleneck' era o tempo de leitura/escrita das cores.
+Aqui, porem, abandonei a ideia depois de alguns testes rapidos, pois: 
+1) o .Net Framework não tem uma classe para lidar com Bitmaps. Ela tem apenas um 'wrapper' (porco) para a GDI+.
+2) Usamos o metodo 'SetColor' apenas width*height vezes.
+Isso deixou o custo de criar o objeto (e depois salva-lo no disco) grande, em relação ao ganho de tempo do SetColor.
+Para uma aplicação onde o objeto é criado uma vez, mas modificado várias vezes (como numa implementação visual, onde o usuario pode dar zoom no fractal), poderia valer a pena.
+
+Cada um dos projetos foi compilado com diferentes parametros, e então 'timed' usando o commando Measure-Command da Powershell do Windows.
+Os tempos das implementações com arquitetura alvo 32 bits estão no arquivo "Tempos 32".
+Os tempos das implementações com arquitetura alvo 64 bits estão no arquivo "Tempos 64".
+
+
+
+
+
+
+
+
+ 
