@@ -1,2 +1,7 @@
 Devido aos infinitos erros, como o que pode ser visto na imagem "Erro.png" eu tive que enviar
 a solution de C++ compactada.
+
+O relatório está no arquivo Relatório.txt
+Os tempos de execução na pasta tempos.
+Os gráficos na pasta gráficos...
+E as solutions na pasta solutions.

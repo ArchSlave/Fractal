@@ -119,6 +119,8 @@ namespace Zooming
                     }
                     else
                     {
+                        Iteration = Iteration % 255;
+
                         int red = Iteration;
                         int blue = maximumIterations - Iteration;
                         int green = (red + blue) / 2;
@@ -284,6 +286,11 @@ namespace Zooming
                 this.verticalMinimum = verticalMinimum;
                 this.verticalMaximum = verticalMaximum;
             }
+        }
+
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+            this.maximumIterations = (int)numericUpDown1.Value;
         }
     }
 }

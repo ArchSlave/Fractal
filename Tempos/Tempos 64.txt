@@ -24,7 +24,7 @@ TotalMinutes      : 0,578033331666667
 TotalSeconds      : 34,6819999
 TotalMilliseconds : 34681,9999
 
-Cpp Improved [Disabled (/Od), inline asm: Off]
+Cpp Improved [Disabled (/Od)]
 Days              : 0
 Hours             : 0
 Minutes           : 0
@@ -37,7 +37,7 @@ TotalMinutes      : 0,872204868333333
 TotalSeconds      : 52,3322921
 TotalMilliseconds : 52332,2921
 
-Cpp Improved [Full Optimization (/Ox), Favor fast code (/Ot), inline asm: Off]
+Cpp Improved [Full Optimization (/Ox), Favor fast code (/Ot)]
 Days              : 0
 Hours             : 0
 Minutes           : 0

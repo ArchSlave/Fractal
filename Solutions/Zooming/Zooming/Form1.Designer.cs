@@ -43,7 +43,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.textBoxRectangle = new System.Windows.Forms.TextBox();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -82,9 +84,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(818, 125);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.Size = new System.Drawing.Size(73, 13);
             this.label2.TabIndex = 3;
-            this.label2.Text = "label1";
+            this.label2.Text = "Max Iterations";
             // 
             // label3
             // 
@@ -179,11 +181,30 @@
             this.textBoxRectangle.Size = new System.Drawing.Size(206, 20);
             this.textBoxRectangle.TabIndex = 14;
             // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(914, 125);
+            this.numericUpDown1.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
+            this.numericUpDown1.TabIndex = 15;
+            this.numericUpDown1.Value = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDown1.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1225, 823);
+            this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.textBoxRectangle);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
@@ -202,6 +223,7 @@
             this.Name = "MainForm";
             this.Text = "Zoomer do Thiago";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -224,6 +246,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBoxRectangle;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
     }
 }
 
