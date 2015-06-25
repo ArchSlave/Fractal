@@ -11,11 +11,9 @@ namespace CSharp
     {
 
         #region Consts
-        // const int imageWidth = 16384;
-        // const int imageHeight = 16384;
-        const int imageWidth = 800;
-        const int imageHeight = 600;
-        
+        const int imageWidth = 16384;
+        const int imageHeight = 16384;
+
         const int MaxColorComponentValue = 255;
         const int IterationMax = 256;
         const int colorSize = 3;

@@ -301,6 +301,7 @@ namespace Zooming
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
             this.maximumIterations = (int)numericUpDown1.Value;
+            DrawFractalAsync(maximumSize);
         }
     }
 }

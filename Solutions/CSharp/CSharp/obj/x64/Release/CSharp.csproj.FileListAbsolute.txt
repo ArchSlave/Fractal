@@ -5,5 +5,7 @@ C:\Users\Thiago\Documents\UFSCar\LARQ\Fractal\CSharp\CSharp\obj\x64\Release\CSha
 C:\Users\Thiago\Documents\UFSCar\LARQ\Fractal\CSharp\CSharp\obj\x64\Release\CSharp.pdb
 C:\Users\Thiago\Documents\UFSCar\LARQ\Fractal\CSharp\CSharp\obj\x64\Release\CSharp.csprojResolveAssemblyReference.cache
 C:\Users\Thiago\Documents\GitHub\Fractal\Solutions\CSharp\CSharp\bin\x64\Release\CSharp.exe.config
+C:\Users\Thiago\Documents\GitHub\Fractal\Solutions\CSharp\CSharp\bin\x64\Release\CSharp.exe
+C:\Users\Thiago\Documents\GitHub\Fractal\Solutions\CSharp\CSharp\bin\x64\Release\CSharp.pdb
 C:\Users\Thiago\Documents\GitHub\Fractal\Solutions\CSharp\CSharp\obj\x64\Release\CSharp.exe
 C:\Users\Thiago\Documents\GitHub\Fractal\Solutions\CSharp\CSharp\obj\x64\Release\CSharp.pdb

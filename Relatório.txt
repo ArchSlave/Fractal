@@ -28,12 +28,21 @@ Zooming é a implementação interativa / com GUI do algoritmo CSharp. Principais m
 - Uma gui
 - Mudança do esquema de cores Windows 98 para vermelho e preto
 - Utilização do formato Bitmap 32bpp
-- Controle do máximo de iterações
+- Controle do máximo de iterações via GUI (tip: de zoom até as coisas ficarem borradas, só então aumente o número de iterações... As coisas vão rápido e, até borarrem, não faz dif se vc calculo 200 ou 3000 iterações)
+- Não adianta calcular mais que 10k iterações... A essa altura os limites da aritmetica de ponto flutuante começam a aparecer anyway.
+
 
 Cada um dos projetos foi compilado com diferentes parametros, e então 'timed' usando o commando Measure-Command da Powershell do Windows.
 Os tempos das implementações com arquitetura alvo 32 bits estão no arquivo "Tempos 32".
 Os tempos das implementações com arquitetura alvo 64 bits estão no arquivo "Tempos 64".
 Gráficos foram feitos usando esses valores, arredondados para baixo.
+
+Comparando código de máquina para ver as otimizações do compilador. Como a versão Vanilla tem um gargalo devido a acessos a disco, a versão C# gera código de máquina só quando é executada (a não ser que ser NGenED), estou comparando o assembly apenas da versão Cpp Improved.
+
+Na pasta Asm tem quatro arquivos. Todas geradas com arquitetura alvo 32 bits. Uma com otimizações desligadas e outra com o máximo de otimizações.
+Os arquivos com nome "Relevante" são 'recortes' das versões completas, contendo as partes interessantes do código.
+
+
 
 
 
