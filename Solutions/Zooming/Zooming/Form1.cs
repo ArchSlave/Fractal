@@ -81,60 +81,70 @@ namespace Zooming
         }
 
 
-        private void DrawFractal(Rectangle rect)
+        private void DrawFractalAsync(Rectangle rect)
         {
-            // pictureBox1.Image = null;
-
             UpdateComplexValues(rect);
 
-            fbm.LoadBits();
-
-
-            Parallel.For(0, fbm.Height, (yCoordinate) =>
+            Task.Run(() =>
             {
-                double complexY = horizontalMinimum + yCoordinate * PixelHeight;
-                if (Math.Abs(complexY) < (PixelHeight / 2)) complexY = 0;
-
-                for (int xCoordinate = 0; xCoordinate < fbm.Width; xCoordinate++)
-                {
-                    double complexX = horizontalMinimum + xCoordinate * PixelWidth;
-
-                    double Zx = 0.0;
-                    double Zy = 0.0;
-                    double Zx2 = Zx * Zx;
-                    double Zy2 = Zy * Zy;
-
-                    int Iteration;
-                    for (Iteration = 0; Iteration < maximumIterations && ((Zx2 + Zy2) < ER2); Iteration++)
-                    {
-                        Zy = 2 * Zx * Zy + complexY;
-                        Zx = Zx2 - Zy2 + complexX;
-                        Zx2 = Zx * Zx;
-                        Zy2 = Zy * Zy;
-                    };
-
-                    if (Iteration == maximumIterations)
-                    {
-                        fbm.SetColor(xCoordinate, yCoordinate, Color.Black);
-                    }
-                    else
-                    {
-                        Iteration = Iteration % 255;
-
-                        int red = Iteration;
-                        int blue = maximumIterations - Iteration;
-                        int green = (red + blue) / 2;
-
-                        Color color = Color.FromArgb(red,0, 0);
-
-                        fbm.SetColor(xCoordinate, yCoordinate, color);
-                    };
-                }
+                DrawFractal(rect);
             });
+        }
 
+        private void DrawFractal(Rectangle rect)
+        {
+            // UpdateComplexValues(rect);
+            using(var oldImage = (Bitmap)img.Clone())
+            {
+                pictureBox1.Image = oldImage;
+                fbm.LoadBits();
+                Parallel.For(0, fbm.Height, (yCoordinate) =>
+                {
+                    double complexY = horizontalMinimum + yCoordinate * PixelHeight;
+                    if (Math.Abs(complexY) < (PixelHeight / 2)) complexY = 0;
 
-            fbm.SaveBits();
-            pictureBox1.Image = img;
+                    for (int xCoordinate = 0; xCoordinate < fbm.Width; xCoordinate++)
+                    {
+                        double complexX = horizontalMinimum + xCoordinate * PixelWidth;
+
+                        double Zx = 0.0;
+                        double Zy = 0.0;
+                        double Zx2 = Zx * Zx;
+                        double Zy2 = Zy * Zy;
+
+                        int Iteration;
+                        for (Iteration = 0; Iteration < maximumIterations && ((Zx2 + Zy2) < ER2); Iteration++)
+                        {
+                            Zy = 2 * Zx * Zy + complexY;
+                            Zx = Zx2 - Zy2 + complexX;
+                            Zx2 = Zx * Zx;
+                            Zy2 = Zy * Zy;
+                        };
+
+                        if (Iteration == maximumIterations)
+                        {
+                            fbm.SetColor(xCoordinate, yCoordinate, Color.Black);
+                        }
+                        else
+                        {
+                            Iteration = Iteration % 255;
+
+                            int red = Iteration;
+                            int blue = maximumIterations - Iteration;
+                            int green = (red + blue) / 2;
+
+                            Color color = Color.FromArgb(red, 0, 0);
+
+                            fbm.SetColor(xCoordinate, yCoordinate, color);
+                        };
+                    }
+
+                });
+
+                fbm.SaveBits();
+                pictureBox1.Image = img;
+                pictureBox1.Invalidate();
+            }           
         }
 
         private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
@@ -148,7 +158,7 @@ namespace Zooming
             if (e.Button == System.Windows.Forms.MouseButtons.Right)
             {
                 PopComplexValues();
-                DrawFractal(maximumSize);
+                DrawFractalAsync(maximumSize);
                 return;
             }
         }
@@ -209,7 +219,7 @@ namespace Zooming
 
             PushComplexValues();
 
-            DrawFractal(selectedRect);
+            DrawFractalAsync(selectedRect);
             textBoxRectangle.Text = selectedRect.ToString();
             mouseDownPosition = Point.Empty;
             pictureBox1.Invalidate();
@@ -217,7 +227,7 @@ namespace Zooming
 
         private void pictureBox1_Paint(object sender, PaintEventArgs e)
         {
-            
+
             e.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 
             if (mouseDownPosition != Point.Empty)
@@ -235,7 +245,7 @@ namespace Zooming
                 e.Graphics.FillRectangle(areaSelectionBrush, selectedRect);
                 e.Graphics.DrawRectangle(framePen, selectedRect);
             }
-            
+
         }
 
         private void ResetFractal()
@@ -244,7 +254,7 @@ namespace Zooming
             horizontalMaximum = 2.5;
             verticalMinimum = -2.5;
             verticalMaximum = 2.5;
-            DrawFractal(maximumSize);
+            DrawFractalAsync(maximumSize);
         }
 
         private void buttonReset_Click(object sender, EventArgs e)

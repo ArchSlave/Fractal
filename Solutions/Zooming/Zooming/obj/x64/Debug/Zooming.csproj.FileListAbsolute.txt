@@ -11,3 +11,16 @@ C:\Users\Thiago\Documents\UFSCar\LARQ\Fractal\Zooming\Zooming\obj\x64\Debug\Zoom
 C:\Users\Thiago\Documents\UFSCar\LARQ\Fractal\Zooming\Zooming\obj\x64\Debug\Zooming.csproj.GenerateResource.Cache
 C:\Users\Thiago\Documents\UFSCar\LARQ\Fractal\Zooming\Zooming\obj\x64\Debug\Zooming.exe
 C:\Users\Thiago\Documents\UFSCar\LARQ\Fractal\Zooming\Zooming\obj\x64\Debug\Zooming.pdb
+C:\Users\Thiago\Documents\GitHub\Fractal\Solutions\Zooming\Zooming\bin\x64\Debug\Zooming.exe.config
+C:\Users\Thiago\Documents\GitHub\Fractal\Solutions\Zooming\Zooming\obj\x64\Debug\Zooming.exe
+C:\Users\Thiago\Documents\GitHub\Fractal\Solutions\Zooming\Zooming\obj\x64\Debug\Zooming.pdb
+C:\Users\Thiago\Documents\GitHub\Fractal\Solutions\Zooming\Zooming\bin\x64\Debug\Zooming.exe
+C:\Users\Thiago\Documents\GitHub\Fractal\Solutions\Zooming\Zooming\bin\x64\Debug\Zooming.pdb
+C:\Users\Thiago\Documents\GitHub\Fractal\Solutions\Zooming\Zooming\bin\x64\Debug\Trauer.dll
+C:\Users\Thiago\Documents\GitHub\Fractal\Solutions\Zooming\Zooming\bin\x64\Debug\Trauer.Graphics.dll
+C:\Users\Thiago\Documents\GitHub\Fractal\Solutions\Zooming\Zooming\bin\x64\Debug\Trauer.pdb
+C:\Users\Thiago\Documents\GitHub\Fractal\Solutions\Zooming\Zooming\bin\x64\Debug\Trauer.Graphics.pdb
+C:\Users\Thiago\Documents\GitHub\Fractal\Solutions\Zooming\Zooming\obj\x64\Debug\Zooming.csprojResolveAssemblyReference.cache
+C:\Users\Thiago\Documents\GitHub\Fractal\Solutions\Zooming\Zooming\obj\x64\Debug\Zooming.MainForm.resources
+C:\Users\Thiago\Documents\GitHub\Fractal\Solutions\Zooming\Zooming\obj\x64\Debug\Zooming.Properties.Resources.resources
+C:\Users\Thiago\Documents\GitHub\Fractal\Solutions\Zooming\Zooming\obj\x64\Debug\Zooming.csproj.GenerateResource.Cache

@@ -221,7 +221,7 @@
             this.Controls.Add(this.horizontalValues);
             this.Controls.Add(this.pictureBox1);
             this.Name = "MainForm";
-            this.Text = "Zoomer do Thiago";
+            this.Text = "Fractal Diver do Thiago";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
