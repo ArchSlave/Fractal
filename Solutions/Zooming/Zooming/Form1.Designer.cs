@@ -44,6 +44,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.textBoxRectangle = new System.Windows.Forms.TextBox();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBoxDeltaX = new System.Windows.Forms.TextBox();
+            this.textBoxDeltaY = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
@@ -64,25 +68,25 @@
             // horizontalValues
             // 
             this.horizontalValues.AutoSize = true;
-            this.horizontalValues.Location = new System.Drawing.Point(818, 12);
+            this.horizontalValues.Location = new System.Drawing.Point(820, 12);
             this.horizontalValues.Name = "horizontalValues";
-            this.horizontalValues.Size = new System.Drawing.Size(90, 13);
+            this.horizontalValues.Size = new System.Drawing.Size(86, 13);
             this.horizontalValues.TabIndex = 1;
-            this.horizontalValues.Text = "horizontalValues: ";
+            this.horizontalValues.Text = "HorizontalValues";
             // 
             // verticalValues
             // 
             this.verticalValues.AutoSize = true;
-            this.verticalValues.Location = new System.Drawing.Point(818, 35);
+            this.verticalValues.Location = new System.Drawing.Point(832, 38);
             this.verticalValues.Name = "verticalValues";
-            this.verticalValues.Size = new System.Drawing.Size(79, 13);
+            this.verticalValues.Size = new System.Drawing.Size(74, 13);
             this.verticalValues.TabIndex = 2;
-            this.verticalValues.Text = "verticalValues: ";
+            this.verticalValues.Text = "VerticalValues";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(818, 125);
+            this.label2.Location = new System.Drawing.Point(828, 163);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(73, 13);
             this.label2.TabIndex = 3;
@@ -91,7 +95,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(818, 83);
+            this.label3.Location = new System.Drawing.Point(825, 119);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(83, 13);
             this.label3.TabIndex = 4;
@@ -102,23 +106,23 @@
             this.textBoxHorizontalMinimum.Enabled = false;
             this.textBoxHorizontalMinimum.Location = new System.Drawing.Point(914, 9);
             this.textBoxHorizontalMinimum.Name = "textBoxHorizontalMinimum";
-            this.textBoxHorizontalMinimum.Size = new System.Drawing.Size(100, 20);
+            this.textBoxHorizontalMinimum.Size = new System.Drawing.Size(143, 20);
             this.textBoxHorizontalMinimum.TabIndex = 5;
             // 
             // textBoxHorizontalMaximum
             // 
             this.textBoxHorizontalMaximum.Enabled = false;
-            this.textBoxHorizontalMaximum.Location = new System.Drawing.Point(1020, 9);
+            this.textBoxHorizontalMaximum.Location = new System.Drawing.Point(1063, 9);
             this.textBoxHorizontalMaximum.Name = "textBoxHorizontalMaximum";
-            this.textBoxHorizontalMaximum.Size = new System.Drawing.Size(100, 20);
+            this.textBoxHorizontalMaximum.Size = new System.Drawing.Size(150, 20);
             this.textBoxHorizontalMaximum.TabIndex = 6;
             // 
             // textBoxVerticalMaximum
             // 
             this.textBoxVerticalMaximum.Enabled = false;
-            this.textBoxVerticalMaximum.Location = new System.Drawing.Point(1020, 35);
+            this.textBoxVerticalMaximum.Location = new System.Drawing.Point(1063, 35);
             this.textBoxVerticalMaximum.Name = "textBoxVerticalMaximum";
-            this.textBoxVerticalMaximum.Size = new System.Drawing.Size(100, 20);
+            this.textBoxVerticalMaximum.Size = new System.Drawing.Size(150, 20);
             this.textBoxVerticalMaximum.TabIndex = 8;
             // 
             // textBoxVerticalMinimum
@@ -126,12 +130,12 @@
             this.textBoxVerticalMinimum.Enabled = false;
             this.textBoxVerticalMinimum.Location = new System.Drawing.Point(914, 35);
             this.textBoxVerticalMinimum.Name = "textBoxVerticalMinimum";
-            this.textBoxVerticalMinimum.Size = new System.Drawing.Size(100, 20);
+            this.textBoxVerticalMinimum.Size = new System.Drawing.Size(143, 20);
             this.textBoxVerticalMinimum.TabIndex = 7;
             // 
             // buttonReset
             // 
-            this.buttonReset.Location = new System.Drawing.Point(1138, 9);
+            this.buttonReset.Location = new System.Drawing.Point(823, 197);
             this.buttonReset.Name = "buttonReset";
             this.buttonReset.Size = new System.Drawing.Size(75, 23);
             this.buttonReset.TabIndex = 9;
@@ -176,14 +180,14 @@
             // textBoxRectangle
             // 
             this.textBoxRectangle.Enabled = false;
-            this.textBoxRectangle.Location = new System.Drawing.Point(914, 80);
+            this.textBoxRectangle.Location = new System.Drawing.Point(914, 116);
             this.textBoxRectangle.Name = "textBoxRectangle";
             this.textBoxRectangle.Size = new System.Drawing.Size(206, 20);
             this.textBoxRectangle.TabIndex = 14;
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(914, 125);
+            this.numericUpDown1.Location = new System.Drawing.Point(914, 161);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -199,11 +203,49 @@
             0});
             this.numericUpDown1.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(859, 93);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(42, 13);
+            this.label5.TabIndex = 16;
+            this.label5.Text = "Delta Y";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(859, 68);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(42, 13);
+            this.label6.TabIndex = 17;
+            this.label6.Text = "Delta X";
+            // 
+            // textBoxDeltaX
+            // 
+            this.textBoxDeltaX.Enabled = false;
+            this.textBoxDeltaX.Location = new System.Drawing.Point(914, 61);
+            this.textBoxDeltaX.Name = "textBoxDeltaX";
+            this.textBoxDeltaX.Size = new System.Drawing.Size(143, 20);
+            this.textBoxDeltaX.TabIndex = 18;
+            // 
+            // textBoxDeltaY
+            // 
+            this.textBoxDeltaY.Enabled = false;
+            this.textBoxDeltaY.Location = new System.Drawing.Point(914, 90);
+            this.textBoxDeltaY.Name = "textBoxDeltaY";
+            this.textBoxDeltaY.Size = new System.Drawing.Size(143, 20);
+            this.textBoxDeltaY.TabIndex = 19;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1225, 823);
+            this.Controls.Add(this.textBoxDeltaY);
+            this.Controls.Add(this.textBoxDeltaX);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.textBoxRectangle);
             this.Controls.Add(this.label4);
@@ -247,6 +289,10 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBoxRectangle;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textBoxDeltaX;
+        private System.Windows.Forms.TextBox textBoxDeltaY;
     }
 }
 

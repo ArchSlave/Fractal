@@ -42,17 +42,15 @@ Comparando código de máquina para ver as otimizações do compilador. Como a versã
 Na pasta Asm tem quatro arquivos. Todas geradas com arquitetura alvo 32 bits. Uma com otimizações desligadas e outra com o máximo de otimizações.
 Os arquivos com nome "Relevante" são 'recortes' das versões completas, contendo as partes interessantes do código.
 
+Podemos ver que na versão Ox instruções como "cvtdq2pd" [Convert Packed Signed Doubleword Integers to Packed Double-Precision Floating-Point Values] (linha 28) são utilizadas, euquanto na versão Od não. Isso me faz crer que o compilador conseguiu utilizar SIMD na versão otimizada.
+Devido a quantidade massiva de instruções que eu não conheço, minha analise de 'assembly gerado por compilador' será limitada a isso.
 
+Uma observação que gostaria de fazer é: os compiladores de C++ mais recentes conseguem gerar código que faz uso de AVX, enquanto os de C# não.
+Como meu computador não da suporte a AVX não foi possivel comparar as diferenças...
 
+Curiosidade:
+- Numa conversa com um colega sobre esse trabalho (desenhar o conjunto de mandelbrot) notamos que esse é o tipo de algoritmo que poderia ser 'jogado para uma gpu'. Uma pesquisa rápida no Google mostrou que não só isso é possível como varias pessoas já o fizeram. Por falta de tempo (e paciencia) eu não desenvolvi uma versão que faz uso da GPU, mas de acordo com quem o fez os ganhos de performance são consideraveis. Isso deve-se basicamente a independencia das operações (o resultado de um ponto não afeta o de outro).
 
-
-
-
-
-
-
-
-
-
-
- 
+Referencias:
+- http://blog.nostatic.org/2009/09/fractal-rendering-on-gpu-mandelbrot-and.html
+- http://www.ozone3d.net/tutorials/mandelbrot_set_p4.php

@@ -58,6 +58,8 @@ namespace Zooming
             textBoxHorizontalMaximum.Text = horizontalMaximum.ToString();
             textBoxVerticalMinimum.Text = verticalMinimum.ToString();
             textBoxVerticalMaximum.Text = verticalMaximum.ToString();
+            textBoxDeltaX.Text = Math.Abs(horizontalMaximum - horizontalMinimum).ToString();
+            textBoxDeltaY.Text = Math.Abs(verticalMaximum - verticalMinimum).ToString();
         }
 
         private void UpdateComplexValues(Rectangle rect)
